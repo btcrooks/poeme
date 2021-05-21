@@ -1,7 +1,7 @@
 const responses = require('../data/responses.json');
 
 const randomize = (max) => Math.floor(Math.random() * max);
-const getRandomResponse = (data) => data[randomize(data.length)];
+const getRandomResponse = (data) => data[randomize(data.length)].author;
 
 exports.handler = async event => {
   return {
