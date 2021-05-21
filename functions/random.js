@@ -6,6 +6,6 @@ const getRandomResponse = (data) => data[randomize(data.length)];
 exports.handler = async event => {
   return {
     statusCode: 200,
-    body: getRandomResponse(JSON.stringify(responses)),
+    body: JSON.stringify(getRandomResponse(responses)),
   }
 }
