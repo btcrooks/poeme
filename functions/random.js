@@ -46,6 +46,6 @@ exports.handler = async event => {
 
   return {
     statusCode,
-    body: JSON.stringify(responseBody ? responseBody : getRandomResponse(responses)),
+    body: JSON.stringify(responseBody !== [] ? responseBody : getRandomResponse(responses)),
   }
 }
