@@ -6,7 +6,7 @@ const getRandomResponse = (data) => data[randomize(data.length)];
 exports.handler = async event => {
   const urlParameters = event.queryStringParameters;
   let statusCode = 200;
-  let responseBody;
+  let responseBody = [];
 
   try {
     Object.entries(urlParameters).forEach((param, index) => {
