@@ -4,7 +4,11 @@
 Serverless function demo  
 
 ## Concepts
-- Weighted random responses  
+- Weighted random responses
+- accept a header for strict mode  
+    - strict mode enabled: e.g. keys with no value will throw error
+    - strict mode disabled: rules are lax... e.g. keys with no value will be ignored
+- if more than n responses are returned, show message.
 
 Get a random random:
 /functions/poem
